@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  
+<div class="s">
+    <img class="img-responsive" src="{% static 'images/amritsar.jpg' %} " alt="Text" style="width:100%;height:600px;filter:brightness(70%)">
+    <div class="centered" ><h1 style="font-size:100px;color:white;">Amritsar</h1></div> 
+</div>
+
+
+<div class="container-fluid" style="margin:20px;font-family: serif;" >
+  <h1 Class="text-center" style="padding-bottom:20px ; color:white;font-size:80px ">Top attractions in Amritsar</h1>
+    <div class="row">
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="{% static 'images/Golden.jpg' %}" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Golden-Temple</b></h1>
+            <p>The Golden Temple, also known as Harmandir Sahib, meaning "abode of God"The Golden Temple, also known as Harmandir Sahib.....&nbsp<a href="https://en.wikipedia.org/wiki/Golden_Temple">Learn more</a></p>
+            <a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 2600</h3></br></br>
+		    </div>
+		</div>	
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Jallianwala_Bagh_in_Day_light.JPG/450px-Jallianwala_Bagh_in_Day_light.JPG" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Jallianwala Bagh</b></h1>
+            <p>Jallianwala Bagh is a historic garden and ‘memorial of national importance’ in Amritsar, India, preserved in the memory  ....&nbsp<a href="https://en.wikipedia.org/wiki/Jallianwala_Bagh">Learn more</a></p>
+            <a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 1200</h3></br></br>
+		    </div>
+		</div>
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="https://punjabidroll.com/wp-content/uploads/2018/08/wagha-border-768x556.jpg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Wagah Border</b></h1>
+            <p>The border crossing draws its name from Wahga village, near which the Radcliffe Line, the boundary demarcation line the boundary ....&nbsp<a href="https://en.wikipedia.org/wiki/Wagah">Learn more</a></p>
+            <a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 1000</h3></br></br>
+		    </div>
+		</div>
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="https://punjabidroll.com/wp-content/uploads/2018/08/mrs-museum-768x543.jpg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Maharaja Ranjit Singh Museum</b></h1>
+            <p>Maharaja Ranjit Singh Museum dedicated to the Sikh Empire founder .....&nbsp<a href="https://en.wikipedia.org/wiki/Ranjit_Singh">Learn more</a></p>
+            <a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 1600</h3></br></br>
+		    </div>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}

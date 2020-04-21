@@ -1,0 +1,26 @@
+{% load static %}
+
+
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color:	midnightblue;">
+    <a href="" class="navbar-brand text-white">TOURIST-SITE</a>
+    {% if request.user.is_authenticated %}
+    &nbsp <a href="" class="navbar-brand text-white">Hello {{request.user}}</a>
+    {% endif %}
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><i class="fa fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav  ml-auto float-right">
+            <li><a href="{% url 'travelapp:homepage'  %}" class="nav-link text-white">HOME</a></li>
+            <li><a href="/about/" class="nav-link  text-white">ABOUT</a></li>
+            <li><a href="#blog" class="nav-link text-white">BLOG</a></li>
+            <li><a href="{% url 'travelapp:contact'  %}" class="nav-link  text-white">CONTACT US</a></li>
+            {% if request.user.is_authenticated %}
+            <li><a href="{% url 'account_logout' %}" class="nav-link text-white">LOG-OUT</a></li>
+            {% else %}
+            <li><a href="{% url 'account_login' %}" class="nav-link text-white">LOG-IN</a></li>
+            <li><a href="{% url 'account_signup' %}" class="nav-link text-white">SIGN-UP</a></li>  
+            {% endif %}
+
+        </ul>
+    </div>
+</nav>

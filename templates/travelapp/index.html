@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section id="home">
+    <div class="bg">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/bg3.jpg' %}" style="width:100%;height:600px">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/bg.jpg' %}"  style="width:100%;height:600px">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/bg4.jpg' %}" style="width:100%;height:600px">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/bg1.jpg' %}"  style="width:100%;height:600px">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/bg5.jpg' %}"  style="width:100%;height:600px">
+        </div>
+        </div>
+         <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <div class="centered p">
+        <h1 style="color:white">TO TRAVEL IS TO LIVE</h1>
+        <h4 style="color:white">Search for popular cities</h4>
+        <div class="dropdown">
+          <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Search
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="{% url 'travelapp:hyderabad'  %}">Hyderabad</a></li>
+            <li><a href="{% url 'travelapp:bangalore'  %}">Bangalore</a></li>
+            <li><a href="{% url 'travelapp:goa'  %}">Goa</a></li>
+            <li><a href="{% url 'travelapp:jak'  %}">J&K</a></li>
+            <li><a href="{% url 'travelapp:mumbai'  %}">Mumbai</a></li>
+            <li><a href="{% url 'travelapp:pondi'  %}">Pondicherry</a></li>
+            <li><a href="{% url 'travelapp:amritsar'  %}">Amritsar</a></li>
+            <li><a href="{% url 'travelapp:delhi'  %}">Delhi</a></li>
+            <li><a href="{% url 'travelapp:varanasi'  %}">Varanasi</a></li>
+            <li><a href="{% url 'travelapp:kochin'  %}">Kochin</a></li>          </ul>
+        </div>
+      </div>
+    </div> 
+    <div class="alert alert-success alert-dismissible text-center">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <h3>Corona Update</h3>
+      <p>The impact of COVID-19 on travel is unprecedented. Like you, we’re monitoring the situation. Rest assured, we’re here to help with questions about your plans.</p>
+    </div>   
+  </section>
+
+  <section id="about">
+    <div class="container pb-5" style="background-color:gainsboro">
+      <h2 class="text-center text">INDIAN TOURISM</h2>
+      <video  width="100%" height="340" controls preload="auto" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="{% static 'about.mp4' %}" type="video/mp4">
+      </video> 
+      </br>
+      <p>One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the most popular tourist destinations in the world. It covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain forests of the south. As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity.</p>
+      <div class="text-center"><button class="btn btn-primary" data-toggle="collapse" data-target="#demo">Read more</button></div>
+      <div id="demo" class="collapse">
+        <p>Fringed by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. As you travel the expanse of the country, you are greeted by diverse nuances of cuisines, faiths, arts, crafts, music, nature, lands, tribes, history and adventure sports. India has a mesmeric conflation of the old and the new. As the bustling old bazaars rub shoulders with swanky shopping malls, and majestic monuments accompany luxurious heritage hotels, the quintessential traveller can get the best of both worlds. Head to the mountains, enjoy a beach retreat or cruise through the golden Thar, India has options galore for all.</p>	
+      </div>
+    </div>
+  </section></br></br>
+
+  <section>
+    <div class="container-fluid pb-5" style="background-color: lightgray;"></br>
+      <h2 class="text"><b>POPULAR IN INDIA</b></h2></br> 
+      <div class="row">
+        <div class="column h-100 d-inline-block mh-100">
+          <a href="{% url 'travelapp:hyderabad'  %}"><img src="{% static 'images/hyd.jpg' %}" alt="Nature" style="width:100%"></a>
+        </div>
+        <div class="column h-100 d-inline-block mh-100">
+          <a href="{% url 'travelapp:goa'  %}"><img src="{% static 'images/goa.jpg' %}" alt="Snow" style="width:100% "></a>
+        </div>
+        <div class="column h-100 d-inline-block">
+          <a href="{% url 'travelapp:bangalore'  %}"><img src="{% static 'images/ban.jpg' %}" alt="Mountains" style="width:100%"></a>
+        </div>
+        <div class="column h-100 d-inline-block">
+          <a href="{% url 'travelapp:kochin'  %}"><img src="{% static 'images/koc.jpg' %}" alt="Lights" style="width:100%"></a>
+        </div>
+        <div class="column h-100 d-inline-block">
+          <a href="{% url 'travelapp:delhi'  %}"><img src="{% static 'images/del.jpg' %}" alt="Lights" style="width:100%"></a>
+        </div>
+      </div>
+      <div class="row">
+          <div class="column">
+            <a href="{% url 'travelapp:jak'  %}"><img src="{% static 'images/jam.jpg' %}" alt="Nature" style="width:100%"></a>
+          </div>
+          <div class="column">
+           <a href=" {% url 'travelapp:amritsar'  %}"> <img src="{% static 'images/amr.jpg' %}" alt="Snow" style="width:100%"></a>
+          </div>
+          <div class="column">
+            <a href="{% url 'travelapp:varanasi'  %}"><img src="{% static 'images/vara.jpg' %}" alt="Mountains" style="width:100%"></a>
+          </div>
+          <div class="column">
+            <a href="{% url 'travelapp:mumbai'  %}"><img src="{% static 'images/mum.jpg' %}" alt="Lights" style="width:100%"></a>
+          </div>
+          <div class="column">
+            <a href="{% url 'travelapp:pondi'  %}"><img src="{% static 'images/pon.jpg' %}" alt="Lights" style="width:100%"></a>
+          </div>
+        </div>
+    </div>
+  </section></br></br></br>
+
+  <section id="blog">
+    <div class="container pb-5 px-5" style="background-color: lightgray;"></br>
+      <h1 class="text">Recent Blog</h1></br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="img-thumbnail">
+            <a href="#">
+              <img src="{% static 'images/b1.jpg' %}" alt="Lights" style="width:100%;height:200px">
+            </a>
+            <h4 class="text-primary">Living the Travel Lifestle</h4>
+            <h6 style="float:left"><i class="fas fa-user"></i>Admin</h6>
+            <h6 style="float:right"><i class="fas fa-calendar"></i>May 11,2019</h6></br></br>
+            <p>Most Visited Tourist Destinations In India Attractions</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-thumbnail">
+            <a href="#">
+              <img src="{% static 'images/b2.jpg' %}" alt="Lights" style="width:100%;height:200px">
+            </a>
+            <h4 class="text-primary">Living the Travel Lifestle</h4>
+            <h6 style="float:left"><i class="fas fa-user"></i>Admin</h6>
+            <h6 style="float:right"><i class="fas fa-calendar"></i>May 11,2019</h6></br></br>
+              <p>India Forts Which Are Worth Visiting Tour And Travel Blog</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-thumbnail">
+            <a href="#">
+              <img src="{% static 'images/b3.jpg' %}" alt="Lights" style="width:100%;height:200px">
+            </a>
+            <h4 class="text-primary">Living the Travel Lifestle</h4>
+            <h6 style="float:left"><i class="fas fa-user"></i>Admin</h6>
+            <h6 style="float:right"><i class="fas fa-calendar"></i>May 11,2019</h6></br></br>
+            <p>Most Visited Tourist Destinations In India Attractions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section></br></br></br>
+
+
+  {% endblock content %}

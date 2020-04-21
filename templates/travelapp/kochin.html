@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  
+<div class="s">
+    <img class="img-responsive" src="https://www.keralapackage.org/wp-content/uploads/2017/08/Kochi-big.jpg" alt="Text" style="width:100%;height:600px;filter:brightness(70%)">
+    
+</div>
+
+
+<div class="container-fluid m-0 pb-4" style="margin:20px;font-family: serif; background-color: #8EE4AF;" >
+  <h1 Class="text-center" style="padding-bottom:20px ; color:white;font-size:80px ">Top attractions in hyderabad</h1>
+    <div class="row">
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="https://en.wikipedia.org/wiki/Fort_Kochi">
+              <img src="https://img.manoramaonline.com/content/dam/mm/en/travel/getting-about-kerala/ernakulam/images/2019/10/12/st-basillica-fort-kochi.jpg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>FORT KOCHI</b></h1>
+            <p>a famous fort best known for its architecture....&nbsp<a href="https://en.wikipedia.org/wiki/Fort_Kochi">Learn more</a></p>
+			<a href="{% url 'travelapp:Booking'  %}"><button class="btn btn-danger" style="float:left">Book Now</button></a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 2500</h3></br></br>
+		    </div>
+		</div>	
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="https://en.wikipedia.org/wiki/Cherai_Beach">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sunrise_at_Cherai_Beach.jpg/375px-Sunrise_at_Cherai_Beach.jpg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>CHERAI BEACH</b></h1>
+            <p>cherai beach is knwon for its natural lighting....&nbsp<a href="https://en.wikipedia.org/wiki/Cherai_Beach">Learn more</a></p>
+			<a href="{% url 'travelapp:Booking'  %}"><button class="btn btn-danger" style="float:left">Book Now</button></a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 3600</h3></br></br>
+		    </div>
+		</div>
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="https://en.wikipedia.org/wiki/Mattancherry_Palace">
+              <img src="https://www.holidify.com/images/cmsuploads/compressed/attr_1101_20190412091253.jpg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>MATTANCHERY PALACE</b></h1>
+            <p>The Mattancherry Palace is a Portuguese palace popularly known as the Dutch Palace<a href="https://en.wikipedia.org/wiki/Mattancherry_Palace">Learn more</a></p>
+			<a href="{% url 'travelapp:Booking'  %}"><button class="btn btn-danger" style="float:left">Book Now</button></a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 1600</h3></br></br>
+		    </div>
+		</div>
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="https://en.wikipedia.org/wiki/Kathakali">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Kathakali_of_kerala.jpg/330px-Kathakali_of_kerala.jpg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>KATHAKALI CENTER</b></h1>
+            <p>kerala is well known for its kathakali....&nbsp<a href="https://en.wikipedia.org/wiki/Kathakali">Learn more</a></p>
+			<a href="{% url 'travelapp:Booking'  %}"><button class="btn btn-danger" style="float:left">Book Now</button></a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 4100</h3></br></br>
+		    </div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

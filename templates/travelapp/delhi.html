@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  
+<div class="s">
+    <img class="img-responsive" src="{% static 'images/delhi.jpg' %}" alt="Text" style="width:100%;height:600px;filter:brightness(70%)">
+    <div class="centered" ><h1 style="font-size:100px;color:white;">Delhi</h1></div> 
+</div>
+
+
+<div class="container-fluid m-0 pb-4" style="margin:20px;font-family: serif; background-color: #8EE4AF;"  >
+  <h1 Class="text-center" style="padding-bottom:20px; color:white;font-size:80px ">Top attractions in Delhi</h1>
+    <div class="row">
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="https://www.holidify.com/images/cmsuploads/square/Humayun-tomb_20170809201316.jpg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Humayun's Tomb</b></h1>
+            <p>Apart from being known for its stunning architecture, this is the first ....&nbsp<a href="https://en.wikipedia.org/wiki/Humayun%27s_Tomb">Learn more</a></p>
+			<a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 2000</h3></br></br>
+		    </div>
+		</div>	
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/240px-LotusDelhi.jpg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Lotus Temple</b></h1>
+            <p>The Lotus Temple, located in Delhi, India, is a Baháʼí House of Worship that was dedicated in December 1986.[1] Notable for its flowerlike....&nbsp<a href="https://en.wikipedia.org/wiki/Jallianwala_Baghhttps://en.wikipedia.org/wiki/Lotus_Temple">Learn more</a></p>
+            <a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 1200</h3></br></br>
+		    </div>
+		</div>
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Redfortdelhi1.jpg/220px-Redfortdelhi1.jpg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Red Fort</b></h1>
+            <p>The Red Fort is a historic fort in the city of Delhi in India, which served as the main residence of the Mughal Emperors. ....&nbsp<a href="https://en.wikipedia.org/wiki/Red_Fort">Learn more</a></p>
+            <a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 1000</h3></br></br>
+		    </div>
+		</div>
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/220px-Taj_Mahal_%28Edited%29.jpeg" alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Taj Mahal</b></h1>
+            <p>The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife Mumtaz Mahal, who died on 17 June that .....&nbsp<a href="https://en.wikipedia.org/wiki/Taj_Mahal">Learn more</a></p>
+			<a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 1500</h3></br></br>
+		    </div>
+		</div>
+	</div>
+</div>{% endblock content %}

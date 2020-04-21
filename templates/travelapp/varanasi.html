@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  
+<div class="s">
+    <img class="img-responsive" src="{% static 'images/varanasi.jpg' %} " alt="Text" style="width:100%;height:600px;filter:brightness(70%)">
+    <div class="centered" ><h1 style="font-size:100px;color:white;">Varanasi</h1></div> 
+</div>
+
+
+<div class="container-fluid m-0 pb-4" style="margin:20px;font-family: serif; background-color: #8EE4AF;" >
+  <h1 Class="text-center" style="padding-bottom:20px; color:white;font-size:80px ">Top attractions in varanasi</h1>
+    <div class="row">
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="{% static 'images/aarti.jpg' %} " alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Ganga Aarthi</b></h1>
+            <p>Ganga Aarti (ritual of offering prayer to the Ganges river) is held daily at dusk.....&nbsp<a href="https://en.wikipedia.org/wiki/Dashashwamedh_Ghat">Learn more</a></p>
+			<a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 2600</h3></br></br>
+		    </div>
+		</div>	
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="{% static 'images/temple.jpg' %} " alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>kasi viswanath</b></h1>
+            <p>Kashi Vishwanath Temple is one of the most famous Hindu temples dedicated to Lord Shiva....&nbsp<a href="https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple">Learn more</a></p>
+			<a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 1200</h3></br></br>
+		    </div>
+		</div>
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="{% static 'images/sarnath.jpg' %} " alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Sarnath</b></h1>
+            <p>The deer park in Sarnath is where Gautama Buddha first taught the Dharma, and where the ....&nbsp<a href="https://en.wikipedia.org/wiki/Sarnath">Learn more</a></p>
+            <a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 1600</h3></br></br>
+		    </div>
+		</div>
+		<div class="col-md-3">
+			<div class="img-thumbnail">
+            <a href="#">
+              <img src="{% static 'images/manmandhir.jpg' %} " alt="Lights" style="width:100%;height:200px">
+            </a>
+			<h1 class="text-center" style="color:navy"><b>Man Mandhir</b></h1>
+            <p>Based on accurate methods of construction, computation and observation of the places of ....&nbsp<a href="https://en.wikiversity.org/wiki/The_Varanasi_Heritage_Dossier/Man_Mandir_and_Man_Singh_Observatory">Learn more</a></p>
+            <a href="{% url 'travelapp:Booking'  %}" class="btn btn-danger" style="float:left">Book Now</a>
+            <h3 style="float:right"><i class="fa fa-inr"></i> 600</h3></br></br>
+		    </div>
+		</div>
+	</div>
+</div>{% endblock content %}

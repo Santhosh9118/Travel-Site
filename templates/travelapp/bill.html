@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <header style="background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&w=1000&q=80);">
+    <h1 style="text-align:center;color:black;">TOURIST SITE</h1>
+
+    <div class="container mt-4" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR00Svra8KGMnKCyAkp9HrWevCNmbtiF4BTvJymJJuw3xw08kza&usqp=CAU);">
+    <h1 style="text-align:center;color:black;">BILLING DETAILS</h1>
+    <p><b>
+    BILLING NAME : {{request.user}}
+    <span id="result"></span>
+    <script>
+        document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+    </script>
+    </b>
+    </p>
+    </p>
+    <p><b>
+        TICKET NO: 
+        </b>  1017829
+    </p>
+    <p><b>
+        TRANSACTION ID: 
+        </b>TMP0000145267
+    </p>
+    <p>
+        <h3 sytle="text-align:center;color:black;">Ticket and billing address has been sent to email and mobile number</h3>
+    </p>
+    <p>
+        <h3 style="text-align: center;color: brown;">THANK YOU!!!</h3>
+    </p>
+    </div>
+ 
+{% endblock content %}
